@@ -1,11 +1,19 @@
 {
   "name": "mcare",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Devanshu Thakkar",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devanshu1210/mcare.git"
+  },
+  "bugs": {
+    "url": "https://github.com/devanshu1210/mcare/issues"
+  },
+  "homepage": "https://github.com/devanshu1210/mcare#readme",
+  "description": ""
 }
