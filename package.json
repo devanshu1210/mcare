@@ -15,5 +15,9 @@
     "url": "https://github.com/devanshu1210/mcare/issues"
   },
   "homepage": "https://github.com/devanshu1210/mcare#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.3",
+    "package.json": "^2.0.1"
+  }
 }
