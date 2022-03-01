@@ -3,12 +3,12 @@ const mongoose = require("mongoose")
 
 //schema 
 let CategorySchema = new mongoose.Schema({
-    CategoryName:{
+    categoryname:{
         type:String,
         require:true,
         ref:"category"
     },
-   Categorytype:{
+   categorytype:{
        type:String,
        require:true
    }
@@ -20,4 +20,4 @@ let CategorySchema = new mongoose.Schema({
 //model 
 let CategoryModel = mongoose.model("category",CategorySchema) //product
 
-module.exports = Categorymodel 
+module.exports = CategoryModel 

@@ -3,7 +3,7 @@ const vendorModel = require("../model/vendor-model")
 
 
 //add [ POST ]
-module.exports.addUser = function (req, res) {
+module.exports.addvendor = function (req, res) {
 
     let vendorName = req.body.vendorName
     let vendoraddress = req.body.vendoraddress
@@ -38,7 +38,7 @@ module.exports.addUser = function (req, res) {
 
 }
 //list
-module.exports.getAllUsers = function (req, res) {
+module.exports.getAllvendor = function (req, res) {
 
     vendorModel.find().populate("role").exec(function (err, data) {
         if (err) {
@@ -51,7 +51,7 @@ module.exports.getAllUsers = function (req, res) {
 
 
 //delete
-module.exports.deleteUser = function(req,res){
+module.exports.deletevendor = function(req,res){
     //params userid 
     let vendorId = req.params.userId //postman -> userid 
 
@@ -66,7 +66,7 @@ module.exports.deleteUser = function(req,res){
 
 
 //update 
-module.exports.updateUser  = function(req,res){
+module.exports.updatevendor  = function(req,res){
     let paramvendorId = req.body.vendorId 
     let paramvendorname = req.body.vendorname
     let paramvendorcontact = req.body.vendorcontact
@@ -85,17 +85,17 @@ module.exports.updateUser  = function(req,res){
 //login 
 
 
-module.exports.deletevendor = function(req,res){
-    let vendorId = req.params.vendorId
-    //delete from role where roleId = 1 
-    vendormodel.deleteOne({"_id":vendorId},function(err,data){
-        if(err){
-            res.json({msg:"Something went wrong!!!",status:-1,data:err})
-        }else{
-            res.json({msg:"removed...",status:200,data:data})
-        }
-    })
-}
+// module.exports.deletevendor = function(req,res){
+//     let vendorId = req.params.vendorId
+//     //delete from role where roleId = 1 
+//     vendormodel.deleteOne({"_id":vendorId},function(err,data){
+//         if(err){
+//             res.json({msg:"Something went wrong!!!",status:-1,data:err})
+//         }else{
+//             res.json({msg:"removed...",status:200,data:data})
+//         }
+//     })
+// }
 
 
 

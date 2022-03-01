@@ -1,4 +1,4 @@
-const branch = require("branch-model")
+const branch = require("../model/branch-model")
 
 //add logic
 module.exports.addbranch = function(req,res){

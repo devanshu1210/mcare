@@ -1,4 +1,4 @@
-const product = require("product-model")
+const product = require("../model/product-model")
 
 //add logic
 module.exports.addproduct = function(req,res){

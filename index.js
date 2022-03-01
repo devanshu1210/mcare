@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const sessionController = require("./");
+const sessionController = require("./controller/session-controller");
 const roleController = require("./controller/role-controller");
 const userController = require("./controller/user-controller");
 const productController =require("./controller/product-controller")
@@ -40,7 +40,7 @@ app.post("/saveuser",sessionController.saveuser)
 //role
 app.get("/roles",roleController.addRole)
 app.get("/roles",roleController.getAllRoles)
-app.delete("/roles/:roleID",roleController.deleterole)
+app.delete("/roles/:roleID",roleController.deleteRole)
 app.put("/roles",roleController.updateRole)
 
 
@@ -49,24 +49,24 @@ app.post("/users",userController.addUser)
 app.get("/signup",userController.getAllUsers)
 app.delete("/saveuser",userController.deleteUser)
 app.put("/saveuser",userController.updateUser)
-app.post("/login",userController.login)
+
 
 //product
 app.post("/product",productController.addproduct)
-app.get("/product",productController.getAllUproduct)
+app.get("/product",productController.getAllproduct)
 app.delete("/product",productController.deleteproduct)
 app.put("/product",productController.updateproduct)
 
 
 //category
 app.post("/category",categoryController.addcategory)
-app.get("/category",categoryController.getAllUcategory)
+app.get("/category",categoryController.getAllcategory)
 app.delete("/category",categoryController.deletecategory)
 app.put("/category",categoryController.updatecategory)
 
 //subcategory
 app.post("/subcategory",subcategoryController.addsubcategory)
-app.get("/subcategory",subcategoryController.getAllUsubcategory)
+app.get("/subcategory",subcategoryController.getAllsubcategory)
 app.delete("/subcategory",subcategoryController.deletesubcategory)
 app.put("/subcategory",subcategoryController.updatesubcategory)
 
@@ -74,22 +74,22 @@ app.put("/subcategory",subcategoryController.updatesubcategory)
 
 //vendor
 app.post("/vendor",vendorController.addvendor)
-app.get("/vendor",vendorController.getAllUvendor)
+app.get("/vendor",vendorController.getAllvendor)
 app.delete("/vendor",vendorController.deletevendor)
 app.put("/vendor",vendorController.updatevendor)
 
 
-//city
+//order
 
 
 
 //branch
 app.post("/branch",branchController.addbranch)
-app.get("/branch",branchController.getAllUbranch)
+app.get("/branch",branchController.getAllbranch)
 app.delete("/branch",branchController.deletebranch)
 app.put("/branch",branchController.updatebranch)
 
-
+//city
 
 
 

@@ -1,4 +1,4 @@
-const category = require("category-model")
+const categoryModel = require("../model/category-model")
 
 //add logic
 module.exports.addcategory = function(req,res){

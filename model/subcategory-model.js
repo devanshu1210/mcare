@@ -12,16 +12,14 @@ let subcategorySchema = new mongoose.Schema({
        type:String,
        require:true
    },
-   category : {
-    type:mongoose.Schema.Types.ObjectId,
-    ref:"category"
-}
+   
+   
    
    
 
 })
 
 //model 
-let subcategoryModel = mongoose.model("category",subcategorySchema) //product
+let Subcategorymodel = mongoose.model("subcategory",subcategorySchema) //product
 
-module.exports = subcategorymodel 
+module.exports = Subcategorymodel 

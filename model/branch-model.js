@@ -22,5 +22,5 @@ let branchSchema = new mongoose.Schema({
 //model 
 let branchModel = mongoose.model("branch",branchSchema) 
 
-module.exports = branchmodel 
+module.exports = branchModel 
 

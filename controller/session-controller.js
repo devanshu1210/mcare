@@ -11,7 +11,7 @@ function signup(req,res){
     res.end()
 }
 
-function saveUser(req,res){
+function saveuser(req,res){
 
     console.log(req.body)//
 
@@ -24,6 +24,6 @@ function saveUser(req,res){
 //export karave to use anywhere it is needed
 module.exports.login = login
 module.exports.signup = signup
-module.exports.saveuser = saveUser 
+module.exports.saveuser = saveuser 
  
 

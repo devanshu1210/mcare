@@ -1,13 +1,13 @@
-const subcategory = require("subcategory-model")
+const subcategory = require("../model/subcategory-model")
 
 //add logic
-module.exports.addcategory = function(req,res){
+module.exports.addsubcategory = function(req,res){
     let subcategoryname = req.body.subcategoryname;
     let subcategorytype = req.body.subcategorytype;
     
 
     let subcategory = new subcategorymodel({
-        subcategorymodel : subcategorymodel,
+        subcategoryname : subcategoryname,
         subcategorytype : subcategorytype
        
     })
